@@ -26,8 +26,8 @@ steps:
   - integrate_capella_vector_search
   - integrate_openai_for_rag
   - run_and_test_application
-  - quiz_rag_concepts
-  - open_question_rag_optimization
+  # - quiz_rag_concepts
+  # - open_question_rag_optimization
 type: MODULE
 repository: https://github.com/hummusonrails/vector-search-nodejs-workshop-part-2
 frameworks:
