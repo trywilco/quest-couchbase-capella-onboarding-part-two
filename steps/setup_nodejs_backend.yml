@@ -1,0 +1,22 @@
+id: setup_nodejs_backend
+learningObjectives:
+  - Set up a Node.js backend for handling vector search queries.
+hints: []
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Now, let's set up the Node.js backend for your RAG application.
+          - text: Navigate to the `backend` directory and install the dependencies using `npm install`.
+          - text: Once installed, start the backend server using `node server.js`.
+          - text: Make sure your `.env` file includes your Couchbase and OpenAI credentials.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

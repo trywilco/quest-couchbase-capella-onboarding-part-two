@@ -1,0 +1,22 @@
+id: integrate_openai_for_rag
+learningObjectives:
+  - Integrate OpenAI API for generating embeddings and RAG responses.
+hints: []
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Now, integrate the OpenAI API into your backend.
+          - text: Add your OpenAI API key to the `.env` file in the backend directory.
+          - text: Configure the backend to transform user queries into embeddings using OpenAI.
+          - text: Test the setup by sending a sample query and checking for embeddings generation.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

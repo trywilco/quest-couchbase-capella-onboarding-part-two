@@ -1,0 +1,22 @@
+id: integrate_capella_vector_search
+learningObjectives:
+  - Connect the backend to Couchbase Capella for vector similarity search.
+hints: []
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Next, let's integrate vector search with Couchbase Capella.
+          - text: Ensure the Couchbase SDK is installed in your backend and your `.env` file is correctly configured.
+          - text: Use the Couchbase SDK to connect to your Capella cluster and query the vector search index created in Part 1.
+          - text: Test the connection by running a sample query.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

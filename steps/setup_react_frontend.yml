@@ -1,0 +1,22 @@
+id: setup_react_frontend
+learningObjectives:
+  - Set up a React frontend for a RAG application.
+hints: []
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Let's start by setting up the React frontend for your application.
+          - text: Navigate to the `frontend` directory and install the dependencies using `npm install`. 
+          - text: Once the dependencies are installed, run the development server using `npm run dev`.
+          - text: Open your browser and visit `http://localhost:3000` to access the UI.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

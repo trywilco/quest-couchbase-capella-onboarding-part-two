@@ -1,0 +1,22 @@
+id: run_and_test_application
+learningObjectives:
+  - Test the complete RAG application workflow.
+hints: []
+startFlow:
+  do:
+    - actionId: bot_message
+      params:
+        person: lucca
+        messages:
+          - text: Finally, let's run and test the full RAG application.
+          - text: Start both the frontend and backend servers.
+          - text: Visit the frontend in your browser, enter a query, and verify the response.
+          - text: Ensure the application correctly retrieves context from Couchbase and generates an augmented response using OpenAI.
+    - actionId: ready_message
+      params:
+        person: lucca
+trigger:
+  type: user_ready_response
+  flowNode:
+    do:
+      - actionId: finish_step

@@ -1,0 +1,40 @@
+id: couchbase_capella_onboarding_part2
+title: Couchbase Capella Onboarding - Part 2
+subtitle: Build a RAG Application with Couchbase and Node.js
+description: >-
+  Welcome to Part 2 of the Couchbase Capella onboarding quest! This module builds upon the foundations set in Part 1 to create a Retrieval Augmented Generation (RAG) application.
+
+
+  You'll integrate your existing Couchbase cluster, vector embeddings, and vector search index into a React frontend and Node.js backend application.
+
+
+  Learn to use Couchbase Capella's capabilities for vector similarity search and augmented query responses.
+
+
+  By the end, you'll have a fully functional RAG application, showcasing Couchbase's potential in modern AI-driven applications.
+level: advanced
+duration: 2.0
+skills:
+  - vector search integration
+  - RAG application design
+  - react
+  - nodejs
+  - couchbase capella
+steps:
+  - setup_react_frontend
+  - setup_nodejs_backend
+  - integrate_capella_vector_search
+  - integrate_openai_for_rag
+  - run_and_test_application
+  - quiz_rag_concepts
+  - open_question_rag_optimization
+type: MODULE
+repository: https://github.com/hummusonrails/vector-search-nodejs-workshop-part-2
+frameworks:
+  frontend:
+    - react
+  backend:
+    - node
+sidebarTools:
+  - name: Couchbase
+    link: https://cloud.couchbase.com/
