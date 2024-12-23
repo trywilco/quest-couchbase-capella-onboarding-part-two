@@ -12,7 +12,7 @@ description: >-
 
 
   By the end, you'll have a fully functional RAG application, showcasing Couchbase's potential in modern AI-driven applications.
-level: advanced
+level: advance
 duration: 2.0
 skills:
   - vector search integration
