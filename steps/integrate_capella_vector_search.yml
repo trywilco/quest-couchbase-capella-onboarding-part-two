@@ -1,7 +1,7 @@
 id: integrate_capella_vector_search
 learningObjectives:
   - Connect the backend to Couchbase Capella for vector similarity search.
-hints: []
+hints:
 startFlow:
   do:
     - actionId: bot_message
